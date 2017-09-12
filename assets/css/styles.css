@@ -103,6 +103,14 @@ header {
 	align-items: center;
 	color: #fff;
 	padding: 35px 100px 0;
+	animation: 1s fadein 0.5s forwards;
+	opacity: 0;
+}
+
+@keyframes fadein {
+	100% {
+		opacity: 1;
+	}
 }
 
 header h2 {
@@ -141,9 +149,9 @@ header nav li:last-child {
 	}
 }
 
-/*----------------
- 	Hero Section
-----------------*/
+/*-------------
+ 	Hero area
+-------------*/
 
 .hero {
 	position: relative;
@@ -178,6 +186,19 @@ header nav li:last-child {
 	padding: 20px 46px;
 }
 
+.hero-content-area {
+	opacity: 0;
+	margin-top: 100px;
+	animation: 1s slidefade 1s forwards;
+}
+
+@keyframes slidefade {
+	100% {
+		opacity: 1;
+		margin: 0;
+	}
+}
+
 @media (max-width: 800px) {
 	.hero {
 		min-height: 600px;
@@ -197,10 +218,10 @@ header nav li:last-child {
 }
 
 /*--------------------
- 	Our Work Section
+ 	Destinations Section
 ---------------------*/
 
-.our-work .grid li {
+.destinations .grid li {
 	padding: 20px;
 	height: 350px;
 	border-radius: 3px;
@@ -211,17 +232,17 @@ header nav li:last-child {
 	background-color: #333;
 }
 
-.our-work .grid li.small {
+.destinations .grid li.small {
 	flex-basis: 40%;
 }
 
-.our-work .grid li.large {
+.destinations .grid li.large {
 	flex-basis: 60%;
 }
 
 @media (max-width: 1000px) {
-	.our-work .grid li.small,
-	.our-work .grid li.large {
+	.destinations .grid li.small,
+	.destinations .grid li.large {
 		flex-basis: 100%;
 	}
 }
