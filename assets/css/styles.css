@@ -20,8 +20,7 @@ nav {
 
 a {
 	text-decoration: none;
-	color: inherit;
-	cursor: pointer;
+	color: #fff;
 	opacity: 0.9;
 }
 
@@ -30,7 +29,6 @@ a:hover {
 }
 
 a.btn {
-	color: #fff;
 	border-radius: 4px;
 	text-transform: uppercase;
 	background-color: #3f51b5;
@@ -39,9 +37,9 @@ a.btn {
 }
 
 hr {
-	width: 150px;
+	width: 250px;
 	height: 2px;
-	background-color: #2196f3;
+	background-color: #3f51b5;
 	border: 0;
 	margin-bottom: 80px;
 }
@@ -50,18 +48,18 @@ section {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 125px 100px;
+	padding: 100px 80px;
 }
 
 @media (max-width: 1000px) {
 	section {
-		padding: 100px 50px;
+		padding: 80px 50px;
 	}
 }
 
 @media (max-width: 600px) {
 	section {
-		padding: 80px 30px;
+		padding: 60px 30px;
 	}
 }
 
@@ -233,11 +231,11 @@ header nav li:last-child {
 }
 
 .destinations .grid li.small {
-	flex-basis: 40%;
+	flex-basis: 30%;
 }
 
 .destinations .grid li.large {
-	flex-basis: 60%;
+	flex-basis: 70%;
 }
 
 @media (max-width: 1000px) {
@@ -263,7 +261,7 @@ header nav li:last-child {
 
 .features .grid li i {
 	font-size: 50px;
-	color: #00bcd4;
+	color: #8c9eff;
 	margin-bottom: 25px;
 }
 
